@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox & Pseudo Classes</title>
+    <style>
+        /*Aligns the Flexbox in accordance to the page*/
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: start;
+        }
+        /*Gives the Flex Items a background image and spacing*/
+        .flexbox div{
+            margin: 5px;
+            padding: 70px;
+            background-image: url(data:image/jpeg;base64,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); 
+        }
+        /*Give the new Flexbox specific dimensions and specifies the Flex item's location in the box*/
+        .flexbox1{
+            display:flex;
+            width:100%;
+            height:400px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Gives the Flex item colors and size*/
+        .flexbox1 div{
+            background-color: aqua;
+            width:200px;
+            height:200px;
+            
+        }
+        /*States that if the site is visited before, the text and background color changes*/
+        a:visited {
+            color: purple;
+            background-color: hotpink;
+        }
+        /*States the site is active in the browser, the font changes and the color does too*/
+        a:active {
+            color: blue;
+            font: 50px
+        }
+        /*If the link is being hovered over by the mouse, the color and background changes*/
+        a:hover{
+            color: orange;
+            background-color: violet;
+        }
+        /*States that if the list items with catty class is hovered, the location, color, and background will change*/
+        .catty:hover{
+            display:flex;
+            background-color: darkkhaki;
+            color:lightpink;
+            justify-content: center;
+            align-items: center;
+            animation-name: catts;
+            animation-duration: 200ms;
+        }
+        /*Gives the catty list items a 200ms transition to change location, color, and background*/
+        @keyframes catts {
+            from {background-color: white; color: black}
+            to {background-color: darkkhaki; color: lightpink; justify-content: center; align-items: center;}
+        }
+        /*Makes the first item's (odd) background a different color*/
+        li:nth-child(2){
+            background-color: darkgoldenrod;
+        }
+        /*Make the third item's (odd) background a different color*/
+        li:nth-child(4){
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cat Flexboxes</h1>
+
+    <div class="flexbox">
+        <div>CatFlex</div>
+        <div>CatFlex1</div>
+        <div>CatFlex2</div>
+    </div>
+
+    <nav>
+        <div class="flexbox1">
+            <div><a href="https://google.com">CatFlex3</a></div>
+            <div><a href="https://google.com">CatFlex4</a></div>
+            <div><a href="https://google.com">CatFlex5</a></div>
+        </div>
+    </nav>
+
+    <div>
+        <ul>
+            <li>Siamaese Cat</li>
+            <li class="catty">Black Cat</li>
+            <li>Tabby Cat</li>
+            <li class="catty">American Shorthair Cat</li>
+        </ul>
+    </div>
+
+    <div>
+        <p><a href="./sources.txt" target="_blank">Sources</a></p>
+    </div>
+</body>
+</html>

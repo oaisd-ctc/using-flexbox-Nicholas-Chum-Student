@@ -1,0 +1,6 @@
+Visited, Hover, Active: https://www.ucertify.com/app/?func=ebook&chapter_no=6#top
+Hover: https://www.w3schools.com/cssref/sel_hover.php
+:nth-child(): https://www.w3schools.com/cssref/sel_nth-child.php
+keyframes: https://www.w3schools.com/css/css3_animations.asp
+Flexbox: https://www.w3schools.com/css/css3_flexbox.asp
+Flexbox Items: https://www.w3schools.com/css/css3_flexbox_items.asp
